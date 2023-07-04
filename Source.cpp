@@ -1,8 +1,8 @@
 /**
- Name: Grace K. P. Barros            Student Number: 100385031
- Course/Section: CPSC 1160-004
- Instructor: Arezoo Ariafar			 Date:           June 27 - 2023
- Assignment/Lab: LA 4	             
+ Name: Grace K. P. Barros     
+ Instructor: Arezoo Ariafar
+ Date: July 4th - 2023
+            
 */
 
 #include <iostream>
@@ -128,25 +128,6 @@ unsigned int Set<T>::getId() const {
 //Private Methods
 template<typename T>
 void Set<T>::sort() {
-    /* THINK ABOUT EFFICIENCY LATER
-    T* empty = new T[size*2];
-
-    int rootIndex = size/2;
-    T root = start[rootIndex];
-
-    empty[rootIndex] = root;
-
-    int countSmall = rootIndex-1;
-    int countBig = rootIndex+1;
-    for(int i = 0; i < size; i++){
-        if(start[i] < root){
-            empty[countSmall--] = start[i];
-        }
-        else{
-            empty[countBig++] = start[i];
-        }
-
-    }*/
     for (int j = 0; j < size; j++) {
         T smaller = start[j];
         int smallerIndex = j;
@@ -286,7 +267,6 @@ Set<T> Set<T>::addition(const Set<T>& setB) const{
     return result;
 };
 
-/*New Set interction is created*/
 template<typename T>
 Set<T> Set<T>::intersection(const Set<T>& setB) const {
     Set<T> result = Set(); 
