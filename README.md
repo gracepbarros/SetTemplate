@@ -1,5 +1,6 @@
-#  Name: Grace K. P. Barros \t Instructor: Arezoo Ariafar
-Date: June 27 - 2023
+#  Name: Grace K. P. Barros  
+# Instructor: Arezoo Ariafar
+Date: July 4th - 2023
 
 ## SetTemplate
 This repo is a demonstration of some abilities I have learned in C++ course.   
